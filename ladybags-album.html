@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADYBAGS Collection Album | Luxury Gallery</title>
+    <link rel="stylesheet" href="ladybags-album.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">LADYBAGS</div>
+            <div class="loading-text">Loading Collection...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="brand">
+                <h1 class="logo">LADYBAGS</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Discover Our Collection</h2>
+            <button class="hero-cta" onclick="scrollToAlbums()">Explore Collection</button>
+        </div>
+    </section>
+
+  
+    <!-- Albums Section -->
+    <section id="albums" class="albums-section">
+        <div class="container">
+            <h2 class="section-title">Our Collection</h2>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search albums..." class="search-input">
+                <button id="searchBtn" class="search-btn">🔍</button>
+            </div>
+
+            <!-- Loading State -->
+            <div id="albumsLoading" class="loading">
+                Loading albums...
+            </div>
+
+            <!-- Albums Grid -->
+            <div class="albums-grid" id="albumsGrid" style="display: none;">
+                <!-- Albums will be dynamically loaded here -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Experience our full collection. Our team is ready to assist you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4>Email</h4>
+                            <p class="contact-value">service@ladybags.co</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>WhatsApp</h4>
+                            <p class="contact-value">+852 70437448</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>LADYBAGS</h3>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="mailto:service@ladybags.co">Email</a></li>
+                        <li><a href="https://wa.me/85270437448">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LADYBAGS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Viewer Modal -->
+    <div id="imageViewer" class="image-viewer-modal">
+        <div class="image-viewer-content">
+            <button class="close-viewer" onclick="closeImageViewer()">&times;</button>
+            <button class="prev-image" onclick="prevImage()">‹</button>
+            <button class="next-image" onclick="nextImage()">›</button>
+            <img id="viewerImage" src="" alt="">
+            <div class="image-info">
+                <h3 id="imageTitle"></h3>
+                <p id="imageCounter"></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <!-- JavaScript -->
+    <script src="chanel-album-complete.js"></script>
+    <script src="ladybags-album.js"></script>
+</body>
+</html>

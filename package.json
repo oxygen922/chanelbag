@@ -1,0 +1,13 @@
+{
+  "name": "ladybags-album",
+  "version": "1.0.0",
+  "description": "LADYBAGS Collection Album - Luxury Gallery",
+  "main": "ladybags-album.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": ["ladybags", "album", "gallery", "luxury", "collection"],
+  "author": "LADYBAGS",
+  "license": "MIT"
+}
