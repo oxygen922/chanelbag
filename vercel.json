@@ -13,6 +13,18 @@
       "dest": "/ladybags-album.html"
     },
     {
+      "src": "/ladybags-album.css",
+      "dest": "/ladybags-album.css"
+    },
+    {
+      "src": "/ladybags-album.js",
+      "dest": "/ladybags-album.js"
+    },
+    {
+      "src": "/chanel-album-complete.js",
+      "dest": "/chanel-album-complete.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
